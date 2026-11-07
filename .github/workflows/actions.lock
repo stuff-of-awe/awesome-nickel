@@ -20,11 +20,11 @@ workflows:
         - 'actions/deploy-pages@v5.0.1'
         - 'actions/upload-pages-artifact@v5.0.0'
     '.github/workflows/push-email-notify.yml':
-        - 'hyperpolymath/smtp-notify-action@v0.3.0'
+        - 'hyperpolymath/smtp-notify-action@v0.5.0'
     '.github/workflows/scorecard.yml':
         - 'hyperpolymath/standards@84355587cb2a1f86e6882de83514a32db2646e7a'
     '.github/workflows/secret-scanner.yml':
-        - 'hyperpolymath/standards@bd0df9ead7faf0cdfe0e13e7966d91e28d0101d4'
+        - 'metadatastician/standards@b8f60511e76c9015d86990317162dce653c92fe1'
 dependencies:
     'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9':
         ref: '55cc8345863c7cc4c66a329aec7e433d2d1c52a9'
@@ -88,9 +88,9 @@ dependencies:
         commit: 'sha1-db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28'
         owner_id: 9919
         repo_id: 259445878
-    'hyperpolymath/smtp-notify-action@v0.3.0':
+    'hyperpolymath/smtp-notify-action@v0.5.0':
         ref: 'v0.3.0'
-        commit: 'sha1-22e7bdb322c430c1d0dac6b3bb307f4bb139d0be'
+        commit: 'sha1-c1c9fa07992a02c1fd3d67a0dc1b08cccb852aef'
         owner_id: 6759885
         repo_id: 1352485172
     'hyperpolymath/standards@84355587cb2a1f86e6882de83514a32db2646e7a':
@@ -107,10 +107,10 @@ dependencies:
             - 'erlef/setup-beam@54075bcc5e249e4758d363f27d099f55d843f124'
             - 'github/codeql-action@db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28'
             - 'ossf/scorecard-action@2d1146689b8cda280b9bc96326124645441f03bc'
-    'hyperpolymath/standards@bd0df9ead7faf0cdfe0e13e7966d91e28d0101d4':
-        ref: 'bd0df9ead7faf0cdfe0e13e7966d91e28d0101d4'
-        commit: 'sha1-bd0df9ead7faf0cdfe0e13e7966d91e28d0101d4'
-        owner_id: 6759885
+    'metadatastician/standards@b8f60511e76c9015d86990317162dce653c92fe1':
+        ref: 'b8f60511e76c9015d86990317162dce653c92fe1'
+        commit: 'sha1-b8f60511e76c9015d86990317162dce653c92fe1'
+        owner_id: 297579217
         repo_id: 1116521501
         uses:
             - 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1'
