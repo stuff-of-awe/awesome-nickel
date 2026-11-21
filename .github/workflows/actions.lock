@@ -7,11 +7,9 @@ workflows:
         - 'actions/checkout@v7.0.1'
     '.github/workflows/codeql.yml':
         - 'actions/checkout@v7.0.1'
-        - 'github/codeql-action@33d7b85da1a04171e211befe2c739303b9a4c066'
-    '.github/workflows/governance.yml':
-        - 'hyperpolymath/standards@84355587cb2a1f86e6882de83514a32db2646e7a'
-    '.github/workflows/hypatia-scan.yml':
-        - 'hyperpolymath/standards@84355587cb2a1f86e6882de83514a32db2646e7a'
+        - 'github/codeql-action@v4.39.3'
+    '.github/workflows/governance.yml': []
+    '.github/workflows/hypatia-scan.yml': []
     '.github/workflows/label-triage.yml': []
     '.github/workflows/labels.yml': []
     '.github/workflows/lock-sync-gate.yml': []
@@ -21,21 +19,9 @@ workflows:
         - 'actions/upload-pages-artifact@v5.0.0'
     '.github/workflows/push-email-notify.yml':
         - 'hyperpolymath/smtp-notify-action@v0.5.1'
-    '.github/workflows/scorecard.yml':
-        - 'hyperpolymath/standards@84355587cb2a1f86e6882de83514a32db2646e7a'
-    '.github/workflows/secret-scanner.yml':
-        - 'metadatastician/standards@b8f60511e76c9015d86990317162dce653c92fe1'
+    '.github/workflows/scorecard.yml': []
+    '.github/workflows/secret-scanner.yml': []
 dependencies:
-    'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9':
-        ref: '55cc8345863c7cc4c66a329aec7e433d2d1c52a9'
-        commit: 'sha1-55cc8345863c7cc4c66a329aec7e433d2d1c52a9'
-        owner_id: 44036562
-        repo_id: 215566462
-    'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1':
-        ref: '3d3c42e5aac5ba805825da76410c181273ba90b1'
-        commit: 'sha1-3d3c42e5aac5ba805825da76410c181273ba90b1'
-        owner_id: 44036562
-        repo_id: 197814629
     'actions/checkout@v7.0.1':
         ref: 'v7.0.1'
         commit: 'sha1-3d3c42e5aac5ba805825da76410c181273ba90b1'
@@ -46,11 +32,6 @@ dependencies:
         commit: 'sha1-368f82528645a54fb793d4d04e342629a3f51346'
         owner_id: 44036562
         repo_id: 438112499
-    'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a':
-        ref: '043fb46d1a93c77aae656e7c1c64a875d1fc6a0a'
-        commit: 'sha1-043fb46d1a93c77aae656e7c1c64a875d1fc6a0a'
-        owner_id: 44036562
-        repo_id: 192625955
     'actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f':
         ref: 'v7.0.0'
         commit: 'sha1-bbbca2ddaa5d8feaa63e36b76fdaad77386f024f'
@@ -63,29 +44,9 @@ dependencies:
         repo_id: 496012378
         uses:
             - 'actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f'
-    'denoland/setup-deno@22d081ff2d3a40755e97629de92e3bcbfa7cf2ed':
-        ref: '22d081ff2d3a40755e97629de92e3bcbfa7cf2ed'
-        commit: 'sha1-22d081ff2d3a40755e97629de92e3bcbfa7cf2ed'
-        owner_id: 42048915
-        repo_id: 356423100
-    'editorconfig-checker/action-editorconfig-checker@840e866d93b8e032123c23bac69dece044d4d84c':
-        ref: '840e866d93b8e032123c23bac69dece044d4d84c'
-        commit: 'sha1-840e866d93b8e032123c23bac69dece044d4d84c'
-        owner_id: 26415196
-        repo_id: 297874902
-    'erlef/setup-beam@54075bcc5e249e4758d363f27d099f55d843f124':
-        ref: '54075bcc5e249e4758d363f27d099f55d843f124'
-        commit: 'sha1-54075bcc5e249e4758d363f27d099f55d843f124'
-        owner_id: 47606891
-        repo_id: 331103973
-    'github/codeql-action@33d7b85da1a04171e211befe2c739303b9a4c066':
+    'github/codeql-action@v4.39.3':
         ref: 'v4.39.3'
         commit: 'sha1-33d7b85da1a04171e211befe2c739303b9a4c066'
-        owner_id: 9919
-        repo_id: 259445878
-    'github/codeql-action@db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28':
-        ref: 'db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28'
-        commit: 'sha1-db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28'
         owner_id: 9919
         repo_id: 259445878
     'hyperpolymath/smtp-notify-action@v0.5.1':
@@ -93,29 +54,3 @@ dependencies:
         commit: 'sha1-e384daf6167a7a7567642d6a62060106244d2413'
         owner_id: 6759885
         repo_id: 1352485172
-    'hyperpolymath/standards@84355587cb2a1f86e6882de83514a32db2646e7a':
-        ref: '84355587cb2a1f86e6882de83514a32db2646e7a'
-        commit: 'sha1-84355587cb2a1f86e6882de83514a32db2646e7a'
-        owner_id: 6759885
-        repo_id: 1116521501
-        uses:
-            - 'actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9'
-            - 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1'
-            - 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a'
-            - 'denoland/setup-deno@22d081ff2d3a40755e97629de92e3bcbfa7cf2ed'
-            - 'editorconfig-checker/action-editorconfig-checker@840e866d93b8e032123c23bac69dece044d4d84c'
-            - 'erlef/setup-beam@54075bcc5e249e4758d363f27d099f55d843f124'
-            - 'github/codeql-action@db488ddef3bf6cb639b32c2e9a7c0a7ea8271d28'
-            - 'ossf/scorecard-action@2d1146689b8cda280b9bc96326124645441f03bc'
-    'metadatastician/standards@b8f60511e76c9015d86990317162dce653c92fe1':
-        ref: 'b8f60511e76c9015d86990317162dce653c92fe1'
-        commit: 'sha1-b8f60511e76c9015d86990317162dce653c92fe1'
-        owner_id: 297579217
-        repo_id: 1116521501
-        uses:
-            - 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1'
-    'ossf/scorecard-action@2d1146689b8cda280b9bc96326124645441f03bc':
-        ref: '2d1146689b8cda280b9bc96326124645441f03bc'
-        commit: 'sha1-2d1146689b8cda280b9bc96326124645441f03bc'
-        owner_id: 67707773
-        repo_id: 421101922
